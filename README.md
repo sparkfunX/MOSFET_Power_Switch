@@ -1,35 +1,21 @@
-SparkFun MicroMod Ethernet Function Board - W5500
+SparkFun MOSFET Power Switch
 ========================================
 
-[![SparkFun MicroMod Ethernet Function Board - W5500](https://cdn.sparkfun.com/assets/parts/1/8/2/4/3/18708-SparkFun_MicroMod_Ethernet_Function_Board_-_W5500-01.jpg)](https://www.sparkfun.com/products/18708)
+[![SparkFun MOSFET Power Switch](https://cdn.sparkfun.com//assets/parts/1/9/5/0/3/SparkFun_MOSFET_Power_Switch_19799-1.jpg)](https://www.sparkfun.com/products/19799)
 
-[*SparkFun MicroMod Ethernet Function Board - W5500 (COM-18708)*](https://www.sparkfun.com/products/18708)
+[*SparkFun MOSFET Power Switch (COM-19799)*](https://www.sparkfun.com/products/19799)
 
-The SparkFun MicroMod Ethernet Function Board - W5500 provides Ethernet network connection as well as Power-over-Ethernet capabilities to a MicroMod project.
+Does your Arduino need to control a high voltage item, like a 12V LED strip, while needing to be powered as well? Do you want to avoid having multiple power adapters for your project and your Arduino? The MOSFET Power Switch is one of those products that we needed ourselves at SparkFun, so we figured other folks may have the same problem. Power the board with up to 12V and control up to 10A, all while providing sweet sweet 3.3V to your control board.
 
-The W5500 Ethernet Controller from WIZnet is a TCP/IP embedded Ethernet controller that uses SPI communication protocol to allow up to eight independent sockets operate simultaneously. The W5500 SPI interface operates at up to 80MHz and supports fast SPI for high speed Ethernet communication. The chip also includes a Wake on Lan (WOL) operation and power down mode to help conserve power.
+This board is ideal for turning on and off large loads such as solenoids, LEDs strips, and DC loads that may have back EMF. Simply pull the CTL pin low to activate the load. 3.3V, GND, and VCC are also provided at PTH headers. The load can be inserted into the poke-home connectors or soldered into PTH holes.
 
-The board uses a Ag9900m Power-over-Ethernet (PoE) DC/DC converter module to power MicroMod assemblies from a PoE source such as a router or network switch. The DC/DC converter supplies 9 Watts @5V to connected devices. This Function Board configures the PoE supply voltage to the IEEE802.3af Alternate B power scheme. This power scheme uses the spare pairs in the Ethernet cable (4,5 and 7,8) for positive and negative DC voltage, isolating power delivery from the data lines.
+The MOSFET ([PSMN7R0-100BS](https://cdn.sparkfun.com/assets/6/9/3/8/1/PSMN7R0-100BS.pdf)) is rated to 100A/100V but we don't recommend you go much above 10A as the PCB traces become the limiter. The board 
+
 
 Repository Contents
 -------------------
 
-* **/Documents** - Datasheet, Appnotes.
-* **/Firmware** - HTTP Test.
 * **/Hardware** - Eagle design files (.brd, .sch)
-
-Documentation
--------------
-
-* **[Hookup Guide](https://learn.sparkfun.com/tutorials/micromod-ethernet-function-board---w5500-hookup-guide)** - A basic Hookup Guide to get started with the MicroMod Ethernet Function Board - W5500.
-
-Product Versions
-----------------
-* [COM-18708](https://www.sparkfun.com/products/18708) - Initial release
-
-Version History
----------------
-* v1.0 - Initial Release 
 
 License Information
 -------------------
