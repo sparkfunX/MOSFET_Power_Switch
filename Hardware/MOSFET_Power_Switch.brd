@@ -136,6 +136,12 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="7" fill="1" visible="no" active="no"/>
+<layer number="157" name="FaceMchng" color="7" fill="1" visible="no" active="no"/>
+<layer number="158" name="FaceMMeas" color="7" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="7" fill="1" visible="no" active="no"/>
+<layer number="160" name="Topologie" color="7" fill="1" visible="no" active="no"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
@@ -183,6 +189,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
 <layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
@@ -3552,7 +3559,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="0603">
+<package name="0603" urn="urn:adsk.eagle:footprint:39615/1" library_version="1">
 <description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
 <wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
@@ -3717,10 +3724,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 <polygon width="0.127" layer="29">
-<vertex x="-0.1905" y="0.2794"/>
-<vertex x="0.1905" y="0.2794"/>
-<vertex x="0.1905" y="-0.2794"/>
-<vertex x="-0.1905" y="-0.2794"/>
+<vertex x="-0.1905" y="0.6604"/>
+<vertex x="0.1905" y="0.6604"/>
+<vertex x="0.1905" y="-0.6604"/>
+<vertex x="-0.1905" y="-0.6604"/>
 </polygon>
 <pad name="3" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="4" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
@@ -3729,9 +3736,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.508" y1="0.889" x2="-0.508" y2="0.889" width="0.2032" layer="21"/>
 <polygon width="0.0127" layer="1">
 <vertex x="-0.6985" y="0.2794"/>
-<vertex x="0.18415" y="0.2794"/>
-<vertex x="0.18415" y="-0.2794"/>
+<vertex x="0.0254" y="0.2794"/>
+<vertex x="0.0254" y="-0.2794"/>
 <vertex x="-0.6985" y="-0.2794"/>
+</polygon>
+<polygon width="0.0127" layer="1">
+<vertex x="-0.0254" y="0.2794"/>
+<vertex x="0.6985" y="0.2794"/>
+<vertex x="0.6985" y="-0.2794"/>
+<vertex x="-0.0254" y="-0.2794"/>
 </polygon>
 </package>
 </packages>
@@ -4727,6 +4740,34 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <via x="2.54" y="19.431" extent="1-16" drill="0.3048"/>
 <via x="8.636" y="19.431" extent="1-16" drill="0.3048"/>
 <contactref element="R1" pad="2"/>
+<wire x1="29.21" y1="25.4" x2="32.17" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="28.26" y1="26.4" x2="29.21" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="24.1808" y1="24.13" x2="28.26" y2="26.4" width="0" layer="19" extent="1-1"/>
+<wire x1="23.368" y1="22.86" x2="24.1808" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="23.495" y1="25.527" x2="24.1808" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="22.44" y1="24.13" x2="23.368" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="20.32" x2="23.368" y2="22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="17.205" x2="21.59" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="19.304" y1="17.145" x2="21.59" y2="17.205" width="0" layer="19" extent="1-1"/>
+<wire x1="24.13" y1="17.526" x2="21.59" y2="17.205" width="0" layer="19" extent="1-1"/>
+<wire x1="21.336" y1="27.94" x2="23.495" y2="25.527" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="29.3151" x2="21.336" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="17.145" y1="27.94" x2="19.05" y2="29.3151" width="0" layer="19" extent="1-1"/>
+<wire x1="16.129" y1="27.09" x2="17.145" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="16.51" y1="25.4" x2="16.129" y2="27.09" width="0" layer="19" extent="1-1"/>
+<wire x1="16.168" y1="24.13" x2="16.51" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="23.495" y1="30.353" x2="21.336" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="22.44" y1="31.75" x2="23.495" y2="30.353" width="0" layer="19" extent="1-1"/>
+<wire x1="26.3" y1="31.75" x2="23.495" y2="30.353" width="0" layer="19" extent="1-1"/>
+<wire x1="27.813" y1="31.75" x2="26.3" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="13.97" x2="21.59" y2="17.205" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="20.32" x2="29.21" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="11.684" y1="17.145" x2="19.304" y2="17.145" width="0" layer="19" extent="1-1"/>
+<wire x1="11.18" y1="17.16" x2="11.684" y2="17.145" width="0" layer="19" extent="1-1"/>
+<wire x1="8.636" y1="19.431" x2="11.18" y2="17.16" width="0" layer="19" extent="1-1"/>
+<wire x1="5.588" y1="16.891" x2="8.636" y2="19.431" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="17.16" x2="5.588" y2="16.891" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="19.431" x2="5.08" y2="17.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA1">
 </signal>
@@ -4928,4 +4969,11 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
